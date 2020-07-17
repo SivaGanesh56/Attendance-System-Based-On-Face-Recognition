@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{%  block content %}
+<div class="jumbotron">
+<form method="post" action="{{url_for('Reupdate')}}">
+    <h3>Welcome sir!!</h3>
+    <p>These are the list of absented students</p>
+    <table style="width:250px">
+    <tr>
+    <th>Id</th>
+    <th>Status</th>
+    </tr>
+    {% for ele in li %}
+    <form method="post" action="/Reupdate">
+    <tr>
+    <td>{{ele}}</td>
+    <td><input type="checkbox" name="student" value={{ele}} onchange="this.form.submit()"> </td> 
+    </tr>
+    <br>
+    </form>
+    {% endfor %}
+    </table>
+    <form method="post" action="/Display">
+        <button type="submit" name="button" value="submit" >submit</button>
+    </form>
+    </div>
+{% endblock %}

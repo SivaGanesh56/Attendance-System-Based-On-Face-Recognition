@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{%  block content %}
+<div class="jumbotron">
+    <h3>Registration Form</h3>
+    <p>Please fill all required fields for succesful submission</p>
+    <br>
+    <form method="post">
+    {{form.hidden_tag()}}
+    {{form.roll.label}} <br>
+    {{form.roll()}}<br><br>
+>
+<p><strong>By clicking submit,Student data will earsed permantely!</strong> </p>
+<br>
+    {{form.submit()}}<br>
+    </div>
+{% endblock %}

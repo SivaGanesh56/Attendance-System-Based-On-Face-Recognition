@@ -1,0 +1,5 @@
+/static
+/__pycache__
+/migrations
+data.sqlite
+trainingData.yml

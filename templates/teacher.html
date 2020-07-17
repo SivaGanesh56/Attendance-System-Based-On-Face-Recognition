@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{%  block content %}
+<div class="jumbotron">
+    <h3>Welcome sir!!</h3>
+    <p>You can select any below options</p>
+    <ul>
+   <li> <a class="nav-item nav-link" href="{{ url_for('attendance') }}">ATTENDANCE</a> </li>
+   <li> <a class="nav-item nav-link" href="{{ url_for('list') }}">VIEW</a> </li>
+    </ul>
+    </div>
+{% endblock %}

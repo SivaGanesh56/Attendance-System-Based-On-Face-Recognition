@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{%  block content %}
+<div class="jumbotron">
+    <h3>Registration Form</h3>
+    <p>Please fill all required fields for successful submission</p>
+    <br>
+    <form method="post">
+    {{form.hidden_tag()}}
+    {{form.name.label}} <br>
+    {{form.name()}}<br>
+    <br>
+    {{form.email.label}} <br>
+    {{form.email()}}<br><br>
+    {{form.roll.label}} <br>
+    {{form.roll()}}<br><br>
+    {{form.branch.label}} <br>
+    {{form.branch()}}<br><br>
+    {{form.sec.label}} <br>
+    {{form.sec()}}<br><br>
+    {{form.status.label}} <br>
+    {{form.status()}}<br><br>
+<p><strong>By clicking submit, You should be ready for Auto data updation by webcam.</strong> </p>
+<p><strong>Make sure that your webcam is on!!!!</strong> </p>
+<br>
+    {{form.submit()}}<br>
+    </div>
+{% endblock %}
